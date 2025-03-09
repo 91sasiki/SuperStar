@@ -3,10 +3,7 @@ name: 刷课
 on: 
   push:
     branches: [ main ]
-  #是否开始每天8点定时刷课，若要开启请把下面两行注释去掉
-  #schedule:
-  #  - cron: "0 8 * * *" 
-    
+  #是否开始每天8点定时刷课，若要开启请把下面两行注释去
 jobs: 
   Start:
     runs-on: ubuntu-latest # 在最新版本的 Ubuntu 操作系统环境下运行
@@ -25,4 +22,4 @@ jobs:
           
       
       - name: Run main.py
-        run: python main.py -u 学习通账号 -p 学习通密码 -l 244403509 #课程id，默认为心理课的
+        run: python main.py -u 18268852287 -p wjh382953 -l ts00006187 #课程id，默认为心理课的
